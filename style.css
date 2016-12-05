@@ -1,31 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700');
+
 html {
 	color: #fff;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
 }
+h3 {
+	text-transform: uppercase;
+}
+p {
+	font-family: 'Playfair Display', serif;
+}
+
+span {
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
 #xsmall, #small, #medium, #large, #xlarge, #landscape, #portrait {
 	display: none;
 }
+
+
+
 /* WIDTHS */
 @media (max-width: 400px) {
 	html { background: #f1c40f; }
 	#xsmall {display: block;}
+	#xsmall span {color: #9b59b6;}
 }
 
 @media (min-width: 401px) and (max-width: 600px) {
-  html { background: #2ecc71; }
+  html { background: #27ae60; }
   #small {display: block;}
+  #small span {color: #c0392b;}
 }
 
 @media (min-width: 601px) and (max-width: 800px) {
   html { background: #e74c3c; }
   #medium {display: block;}
+  #medium span {color: #3498db;}
 }
 @media (min-width: 801px) and (max-width: 1200px) {
   html { background: #3498db; }
   #large {display: block;}
+  #large span {color: #f1c40f;}
+  
 }
 @media (min-width: 1201px) {
   html { background: #34495e; }
   #xlarge {display: block;}
+  #xlarge span {color: #2ecc71;}
 }
 
 /* ORIENTATION */
