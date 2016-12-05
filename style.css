@@ -1,22 +1,29 @@
 html {
-	background: #f1c40f;
 	color: #fff;
 }
-
-.400, .401-600, .601-800, .801-1200, .1201 {
+#xsmall, #small, #medium, #large, #xlarge {
 	display: none;
 }
 
-
-@media (min-width: 401px) and (max-width: 600px;) {
-  html { background: red; }
+@media (max-width: 400px) {
+	html { background: #f1c40f; }
+	#xsmall {display: block;}
 }
+
+@media (min-width: 401px) and (max-width: 600px) {
+  html { background: #2ecc71; }
+  #small {display: block;}
+}
+
 @media (min-width: 601px) and (max-width: 800px) {
-  html { background: green; }
+  html { background: #e74c3c; }
+  #medium {display: block;}
 }
 @media (min-width: 801px) and (max-width: 1200px) {
-  html { background: blue; }
+  html { background: #3498db; }
+  #large {display: block;}
 }
 @media (min-width: 1201px) {
-  html { background: green; }
+  html { background: #34495e; }
+  #xlarge {display: block;}
 }
