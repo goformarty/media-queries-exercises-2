@@ -1,10 +1,10 @@
 html {
 	color: #fff;
 }
-#xsmall, #small, #medium, #large, #xlarge {
+#xsmall, #small, #medium, #large, #xlarge, #landscape, #portrait {
 	display: none;
 }
-
+/* WIDTHS */
 @media (max-width: 400px) {
 	html { background: #f1c40f; }
 	#xsmall {display: block;}
@@ -26,4 +26,12 @@ html {
 @media (min-width: 1201px) {
   html { background: #34495e; }
   #xlarge {display: block;}
+}
+
+/* ORIENTATION */
+@media (orientation: landscape) {
+	#landscape {display: block;}
+}
+@media (orientation: portrait) {
+	#portrait {display: block;}
 }
